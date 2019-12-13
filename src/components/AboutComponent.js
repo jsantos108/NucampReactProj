@@ -12,12 +12,10 @@ import { Link } from "react-router-dom";
 function RenderPartner({ partner }) {
   return partner ? (
     <React.Fragment>
-      <Media object="true" src={partner.image} alt={partner.name} width="150" />
-      <Media body="true" className="ml-5 mb-4">
-        <Media heading="true">
-          {partner.name}
-          {partner.description}
-        </Media>
+      <Media object src={partner.image} alt={partner.name} width="150" />
+      <Media body className="ml-5 mb-4">
+        <Media heading="true">{partner.name}</Media>
+        {partner.description}
       </Media>
     </React.Fragment>
   ) : (
