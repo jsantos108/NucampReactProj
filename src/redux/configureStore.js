@@ -1,5 +1,5 @@
-import { Provider } from "react-redux";
-import { ConfigureStore } from "./redux/configureStore";
+import { createStore } from "redux";
+import { Reducer, initialState } from "./reducer";
 
 export const ConfigureStore = () => {
   const store = createStore(Reducer, initialState);
